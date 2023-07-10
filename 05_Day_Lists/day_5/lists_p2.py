@@ -1,7 +1,8 @@
 import sys
-sys.path.insert(1, 'C:\Users\jtaylor\Videos\30-Days-Of-Python\data')
 
-from data.countries import countries 
+sys.path.insert(0, 'C:/Users/jtaylor/Videos/Thirty-Days-Of-Python/data')
+
+from countries import countries 
 
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
@@ -34,3 +35,15 @@ max_span = round(abs(max_age - average_age),2)
 
 print('Min to Average Age Span:', min_span, ', Max to Average Age Span:', max_span)
 
+print(round(len(countries) / 2) - 1)
+
+print(len(countries) / 2)
+
+print(countries[95])
+
+Afghanistan, Albania, Algeria, *rest = countries
+
+print(Afghanistan)
+print(Albania)
+print(Algeria)
+print(rest)
