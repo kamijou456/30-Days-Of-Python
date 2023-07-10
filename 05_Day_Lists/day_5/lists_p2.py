@@ -46,4 +46,4 @@ Afghanistan, Albania, Algeria, *rest = countries
 print(Afghanistan)
 print(Albania)
 print(Algeria)
-print(rest)
+#print(rest)
