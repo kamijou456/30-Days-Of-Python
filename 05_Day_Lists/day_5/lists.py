@@ -9,7 +9,7 @@ print('First List:', len(empty_list), 'Second List:', len(six_items))
 
 print(first, third, sixth)
 
-mixed_data_types =['JJ', 29, 6.1, True, '4000 Golding Ave']
+mixed_data_types =['JJ', 29, 6.1, True]
 
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 print(it_companies)

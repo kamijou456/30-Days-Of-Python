@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(0, 'C:/Users/jtaylor/Videos/Thirty-Days-Of-Python/data')
+sys.path.insert(0, '%USERPROFILE%/Videos/Thirty-Days-Of-Python/data')
 
 from countries import countries 
 

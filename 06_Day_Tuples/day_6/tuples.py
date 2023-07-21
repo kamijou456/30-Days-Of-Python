@@ -2,15 +2,15 @@
 
 empty_tuple = ()
 
-sisters = ('lillie', 'ellie', 'sharon')
+sisters = ('li', 'el', 'sha')
 
-brothers = ('logan', 'taylor', 'johnny')
+brothers = ('lo', 'tay', 'jo')
 
 siblings = sisters + brothers
 
 print(len(siblings))
 
-parents = ('John', 'Elizabeth')
+parents = ('Joh', 'Eliza')
 
 family_members = siblings + parents
 
