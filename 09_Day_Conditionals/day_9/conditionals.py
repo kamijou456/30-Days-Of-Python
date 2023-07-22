@@ -1,5 +1,5 @@
 # exercise 1
-'''
+
 driver_age = int(input('Enter Your Age: '))
 
 if driver_age >= 18:
@@ -34,13 +34,14 @@ elif nOne < nTwo:
     print(nOne, 'is less than', nTwo)
 else:
     print(nOne,'and', nTwo, 'have the same value')
-'''
+
 # exercise 4
 student_dic = {}
 number_students = int(input('Enter Number of Students in Your Class: '))
 
+print('Enter the Students name followed by their assignment score.')
+
 while len(student_dic) < number_students:
-    print('Enter the Students name followed by their assignment score.')
     student_name = input('Enter Students name: ')
     student_score = int(input('Enter Students score: '))
     if student_score >= 90:
@@ -56,3 +57,59 @@ while len(student_dic) < number_students:
     student_dic[student_name] = student_grade
 
 print(student_dic)
+
+# exercise 5
+
+autumn = ['september', 'october', 'november']
+winter = ['december', 'january', 'february']
+spring = ['march', 'april', 'may']
+summer = ['june', 'july', 'august']
+
+input_month = input('Enter a month: ').lower()
+
+
+if input_month in autumn:
+    print('the season is Autumn')
+elif input_month in winter:
+    print('the season is Winter')
+elif input_month in spring:
+    print('the season is Spring')
+elif input_month in summer:
+    print('the season is Summer')
+else:
+    print('invalid entry please start over')
+
+
+
+# exercise 6
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit_input = input('Enter a Fruit to the grocery list: ').lower()
+
+if fruit_input in fruits:
+    print('Fruit is already on the list.')
+else:
+    fruits.append(fruit_input)
+    print('Fruit has been added to the list!')
+    print(fruits)
+
+
+# exercise 7
+
+Fname = input('Enter first name: ')
+Lname = input('Enter last name: ')
+Age = input('Enter age: ')
+Country = input('Enter Country: ')
+Is_married = False
+Skills = ['JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+Address = input('Enter address: ')
+
+person ={'first_name':Fname, 'last_name':Lname, 'age':Age, 'country':Country, 'is_married':Is_married, 'skills':Skills, 'address':Address}
+
+if 'skills' in person:
+    print(person['skills'][2])
+    if 'skills' in person and 'Python' in person['skills']:
+        print('Person has python experience!')
+
+if person['is_married'] == Is_married and Country in person['country']:
+    print(person['first_name'],person['last_name'], 'lives in', person['country'], 'He is not Married')
