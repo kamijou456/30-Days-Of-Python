@@ -1,4 +1,4 @@
-[
+country_info = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
