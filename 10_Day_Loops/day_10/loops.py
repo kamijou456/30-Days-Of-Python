@@ -1,7 +1,7 @@
 import sys
 import os
 
-sys.path.insert(0, os.environ['USERPROFILE'] + '\\Documents\\Personal_Code_Projects\\Python\\30-Days-Of-Python\\data')
+sys.path.insert(0, os.environ['USERPROFILE'] + '\\Documents\\code_projects\\Python\\30-Days-Of-Python\\data')
 
 from countries import countries
 from countries_data import country_info
