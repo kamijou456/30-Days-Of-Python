@@ -99,3 +99,96 @@ print(calculate_slope(cartPoints))
 
 # 7
 
+'''
+
+print('Input variables A,B,C of a quadratic equation.')
+
+vari = {'a':float(input('Enter (A) variable: ')), 'b':float(input('Enter (B) variable: ')), 'c':float(input('Enter (C) variable: '))}
+
+def solve_quadratic_eqn(v):
+    
+    solPlus = ((-1 * v['b']) + (v['b'] ** 2 - (4 * v['a'] * v['c'])) ** (1/2)) / (2 * v['a'])
+
+    solMinus = ((-1 * v['b']) - (v['b'] ** 2 - (4 * v['a'] * v['c'])) ** (1/2)) / (2 * v['a'])
+
+    quadlist = []
+
+    quadlist.append(solPlus)
+
+    quadlist.append(solMinus)
+
+    return quadlist
+
+print('The roots of the quadratic equation are: ' , solve_quadratic_eqn(vari))
+
+'''
+
+# 8
+
+'''
+
+lst = [1,2,3,4,5]
+
+def print_list(l):
+
+    for i in l:
+        print(i)
+
+print_list(lst)
+
+'''
+
+# 9
+
+'''
+
+def reverse_list(l):
+
+    reversed_list = []
+
+    for i in l:
+        reversed_list = [i] + reversed_list
+
+    return reversed_list
+
+print(reverse_list(lst))
+
+'''
+
+# 10
+
+
+
+food_stuff = ['potato', 'tomato', 'mango', 'milk']
+print(food_stuff)
+
+def cap_list_items(l):
+
+    cap_list = []
+
+    for i in l:
+        cap_list.append(i.capitalize())
+    
+    return cap_list
+
+print(cap_list_items(food_stuff))
+
+def add_item_temp(l , addon):
+    
+    new_list = l + [addon]
+
+    return new_list
+
+print(add_item_temp(food_stuff , 'meat'))
+
+print(food_stuff)
+
+def add_item_perm(l , addon):
+    
+    l.append(addon)
+
+    return l
+
+print(add_item_perm(food_stuff, 'meat'))
+
+print(food_stuff)
