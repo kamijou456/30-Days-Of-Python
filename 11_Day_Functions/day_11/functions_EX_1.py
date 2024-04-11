@@ -157,7 +157,7 @@ print(reverse_list(lst))
 
 # 10
 
-
+'''
 
 food_stuff = ['potato', 'tomato', 'mango', 'milk']
 print(food_stuff)
@@ -172,6 +172,8 @@ def cap_list_items(l):
     return cap_list
 
 print(cap_list_items(food_stuff))
+
+# 11
 
 def add_item_temp(l , addon):
     
@@ -192,3 +194,17 @@ def add_item_perm(l , addon):
 print(add_item_perm(food_stuff, 'meat'))
 
 print(food_stuff)
+
+# 12
+
+def remove_item(lst, item):
+    lst.remove(item)
+    
+    return lst
+
+print(remove_item(food_stuff, 'mango'))
+
+'''
+
+# 13
+
