@@ -208,3 +208,42 @@ print(remove_item(food_stuff, 'mango'))
 
 # 13
 
+'''
+
+def sum_of_numbers(n):
+    total = 0
+    for i in range(n+1):
+        total+=i
+    return total
+
+print(sum_of_numbers(5))
+
+'''
+
+# 14
+
+def sum_of_odds(n):
+
+    totalo = 0
+
+    for i in range(n + 1):
+        if i % 2 != 0:
+            totalo += i
+
+    return totalo
+
+print(sum_of_odds(5))
+
+# 15
+
+def sum_of_evens(n):
+    totale = 0
+
+    for i in range(n + 1):
+        if i % 2 == 0:
+            totale += i
+    
+    return totale
+
+print(sum_of_evens(5))
+
