@@ -77,7 +77,7 @@ evn_num_lst = [1,2,3,4,5,6,7,8,9,10]
 
 odd_num_lst = [2,15,6,11,13,8,5]
 
-rep_num_lst = [5,5,5,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,10,10,9,13,13,13,13,13,13,13,13,13,13]
+rep_num_lst = [5,5,5,3,3,3,3,3,3,3,3,3,3,4,4,4,4,10,10,9,13,13,13,13,13,13,13,13,13,13]
 
 '''
 
@@ -139,7 +139,7 @@ def calculate_mode(lst):
 
     lst.sort()
 
-    dct = {}
+    dct_lst = []
 
     for i in range(lst[-1] + 1):
 
@@ -147,14 +147,18 @@ def calculate_mode(lst):
 
         if num_num > 0:
 
-            dct[num_num] = i
+            tpl = (num_num , i)
 
-    print(dct)
+            dct_lst.append(tpl)
 
-    count_lst = list(dct.keys())
+    print(dct_lst)
 
-    count_lst.sort()
+    dct_lst.sort()
 
-    print("Mode is number: " , dct[count_lst[-1]] , "\nThe number of times the number is repeated: " , count_lst[-1])
+    print(dct_lst)
+
+    mode = dct_lst[-1]
+
+    print("Mode is number: " , mode[-1] , "\nThe number of times the number is repeated: " , mode[-2])
 
 calculate_mode(rep_num_lst)
