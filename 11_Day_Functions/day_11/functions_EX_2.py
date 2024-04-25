@@ -157,6 +157,66 @@ def calculate_mode(lst):
 
     mode = dct_lst[-1]
 
-    print("Mode is number: " , mode[-1] , "\nThe number of times the number is repeated: " , mode[-2])
+    return mode
     
-calculate_mode(rep_num_lst)
+print("Mode is number: " , calculate_mode(rep_num_lst)[-1] , "\nThe number of times the number is repeated: " , calculate_mode(rep_num_lst)[-2])
+
+# 7
+
+def calculate_range(lst):
+
+    lst.sort()
+
+    if len(lst) > 1:
+
+        range_total = lst[-1] - lst[0]
+
+    else:
+
+        print("Not enough numbers in the list to have a range.")
+
+    return range_total
+
+print("Range of numbers in the list: " , calculate_range(odd_num_lst))
+
+# 8 
+
+def calculate_variance(lst):
+
+    mean = calculate_mean(lst)
+
+    total = 0
+
+    for i in lst:
+
+        dif = i - mean
+
+        dif_sq = dif ** 2
+
+        total += dif_sq
+
+    vari = total / (len(lst) - 1)
+
+    return vari
+
+print("Variance of list: " , calculate_variance(rep_num_lst))
+
+print("Variance of list: " , calculate_variance(evn_num_lst))
+
+print("Variance of list: " , calculate_variance(odd_num_lst))
+
+# 9
+
+def calculate_std(lst):
+
+    vari = calculate_variance(lst)
+
+    std = vari ** (1/2)
+
+    return std
+
+print("Standard Deviation of list: " , calculate_std(rep_num_lst))
+
+print("Standard Deviation of list: " , calculate_std(evn_num_lst))
+
+print("Standard Deviation of list: " , calculate_std(odd_num_lst))
