@@ -155,10 +155,8 @@ def calculate_mode(lst):
 
     dct_lst.sort()
 
-    print(dct_lst)
-
     mode = dct_lst[-1]
 
     print("Mode is number: " , mode[-1] , "\nThe number of times the number is repeated: " , mode[-2])
-
+    
 calculate_mode(rep_num_lst)
