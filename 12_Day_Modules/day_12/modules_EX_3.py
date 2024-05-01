@@ -20,9 +20,7 @@ print(shuffle_lst(num_lst))
 
 def rando_unique():
 
-    lst = []
-
-    [lst.append(i) for i in range(0,10)]
+    lst = [i for i in range(10)]
 
     random.shuffle(lst)
 
