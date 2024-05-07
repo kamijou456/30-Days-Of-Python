@@ -18,6 +18,8 @@ def shuffle_lst(lst):
 
 print(shuffle_lst(num_lst))
 
+# 2
+
 def rando_unique():
 
     lst = [i for i in range(10)]
