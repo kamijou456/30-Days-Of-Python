@@ -53,3 +53,15 @@ timestamp_start = datetime(1970, 1, 1)
 timestamp_delta = now - timestamp_start
 
 print(timestamp_delta)
+
+# 6 
+
+sack_lunch_go_live = datetime(2024, 4, 5)
+
+sack_lunch_delta = now - sack_lunch_go_live
+
+print(sack_lunch_delta)
+
+itcs_timedelta = now - timedelta(days=66)
+
+print(itcs_timedelta)
