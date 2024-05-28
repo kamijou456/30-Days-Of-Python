@@ -11,6 +11,8 @@ email_file_path = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-P
 
 # 4
 
+'''
+
 email_open = open(email_file_path)
 
 email = email_open.read()
@@ -31,6 +33,8 @@ print(dup_remove_lst)
 
 email_open.close()
 
+'''
+
 obama_speech = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Python\data\obama_speech.txt'
 
 michelle_speech = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Python\data\michelle_obama_speech.txt'
@@ -43,11 +47,13 @@ melina_speech = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Pyt
 
 def find_most_common_words(text:str , numoflst:int):
 
-    if 'C:' in text:
+    if text.startswith('C:') == True:
 
         text_open = open(text)
 
         text_read = text_open.read()
+
+        text_open.close()
 
     else:
 
@@ -61,17 +67,15 @@ def find_most_common_words(text:str , numoflst:int):
 
     most_used_words.sort(reverse=True)
 
-    text_open.close()
-
     return most_used_words[0:numoflst]
 
-print(find_most_common_words(obama_speech,10))
+# print(find_most_common_words(obama_speech,10))
 
-print(find_most_common_words(michelle_speech,3))
+# print(find_most_common_words(michelle_speech,3))
 
-print(find_most_common_words(trump_speech,3))
+# print(find_most_common_words(trump_speech,3))
 
-print(find_most_common_words(melina_speech,3))
+# print(find_most_common_words(melina_speech,3))
 
 romeo_juliet = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Python\data\romeo_and_juliet.txt'
 
@@ -79,15 +83,17 @@ romeo_juliet = r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Pyth
 
 # 9
 
-hacker_csv_open = open(r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Python\data\hacker_news.csv')
+# hacker_csv_open = open(r'C:\Users\tylorxe\Documents\code_projects\Python\30-Days-Of-Python\data\hacker_news.csv')
 
-hacker_csv_reader = csv.reader(hacker_csv_open , delimiter=',')
+# hacker_csv_reader = csv.reader(hacker_csv_open , delimiter=',')
 
 number_python = 0
 
 number_javascript = 0
 
 number_java = 0
+
+'''
 
 for row in hacker_csv_reader:
 
@@ -103,8 +109,10 @@ for row in hacker_csv_reader:
 
             number_java += 1
 
-print(number_python)
+'''
 
-print(number_javascript)
+# print(number_python)
 
-print(number_java)       
+# print(number_javascript)
+
+# print(number_java)       
