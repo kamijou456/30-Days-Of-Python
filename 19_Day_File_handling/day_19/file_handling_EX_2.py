@@ -87,16 +87,24 @@ number_python = 0
 
 number_javascript = 0
 
+number_java = 0
+
 for row in hacker_csv_reader:
 
-    if 'Python' or 'python' in row:
+    for i in row:
 
-        number_python += 1
-    
-    if 'Javascript' or 'JavaScript' or 'javascript' in row:
+        if i.find('Python') > -1 or i.find('python') > -1:
 
-        number_javascript += 1
+            number_python += 1
+        elif i.find('JavaScript') > -1 or i.find('Javascript') > -1 or i.find('javascript') > -1:
+
+            number_javascript += 1
+        elif i.find('Java') > -1 or i.find('java') > -1:
+
+            number_java += 1
 
 print(number_python)
 
 print(number_javascript)
+
+print(number_java)       
